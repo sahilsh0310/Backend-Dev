@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Students List</title>
+</head>
+<body>
+
+  <h2>Student Records</h2>
+
+  <ul>
+    <% students.forEach(function(s) { %>
+      <li>
+        <strong>Name:</strong> <%= s.student %> |
+        <strong>Branch:</strong> <%= s.branch %>
+      </li>
+    <% }) %>
+  </ul>
+
+  <br>
+  <a href="/">Add More</a>
+
+</body>
+</html>
